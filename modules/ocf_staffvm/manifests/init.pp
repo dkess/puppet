@@ -14,3 +14,6 @@ class ocf_staffvm {
       }
     ]
   }
+
+  include prometheus::node_exporter
+}
