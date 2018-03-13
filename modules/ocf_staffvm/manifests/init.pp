@@ -9,6 +9,14 @@ class ocf_staffvm {
       'static_configs'  => [
         { 'targets' => [ 'localhost:9090' ],
         'labels'  => { 'alias' => 'Prometheus'}
+        },
+        { 'job_name' => 'node',
+        'scrape_interval' => '5s',
+        'scrape_timeout'  => '5s',
+        'static_configs'  => [
+          { 'targets' => [ 'leprosy:9100' ]
+          }
+        ]
         }
       ]
       }
