@@ -2,5 +2,6 @@ classes:
     - ocf::packages::docker
     - ocf_ocfweb::dev_config
     - ocf_stats::prometheus
+    - ocf_stats::grafana
 
 owner: dkessler
